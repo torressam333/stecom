@@ -1,0 +1,9 @@
+{
+    "name": "composer.json",
+    "description": "file for dependencies",
+    
+    "require": {
+        "vlucas/phpdotenv": "^3.3",
+        "altorouter/altorouter": "^1.2"
+    }
+}

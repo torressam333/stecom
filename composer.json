@@ -1,9 +1,26 @@
 {
     "name": "composer.json",
     "description": "file for dependencies",
-    
+
+    "autoload": {
+            "psr-4":{
+                "App\\": "app"
+            },
+
+            "files": ["app/functions/helper.php"]
+        },
+
     "require": {
         "vlucas/phpdotenv": "^3.3",
-        "altorouter/altorouter": "^1.2"
+        "altorouter/altorouter": "^1.2",
+        "philo/laravel-blade": "^3.1",
+        "illuminate/database": "^5.8",
+        "illuminate/console": "^5.8",
+        "illuminate/pagination": "^5.8",
+        "fzaninotto/faker": "^1.8"
+    },
+
+    "config":{
+        "optimize-autoloader": true
     }
 }
